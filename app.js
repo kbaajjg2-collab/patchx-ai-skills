@@ -56,7 +56,7 @@ const repoLinks = {
   'LarkSuite CLI': 'https://github.com/larksuite/cli',
   'Microsoft Skills': 'https://github.com/microsoft/skills',
 };
-const internalDownload = 'https://192-168-100-15.patchx-fileserver.direct.quickconnect.to:5001/#/signin';
+const internalDownload = '#internal-access';
 const modelRankingUrl = 'https://artificialanalysis.ai/models';
 const openClawHome = 'https://openclaw.ai/';
 const openClawDocs = 'https://docs.openclaw.ai/';
