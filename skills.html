@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Skills · 技能清单</title>
+    <link rel="stylesheet" href="./styles.css?v=20260912-40" />
+    <style>
+      .list-page{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:42px 0 60px}.list-page h1{margin:0;font-size:clamp(28px,4vw,46px)}.list-page>p{color:var(--muted);margin:10px 0 26px}.list-back{display:inline-block;color:#176daf;background:#e9f3fb;border:1px solid #b9d6ed;border-radius:11px;padding:10px 16px;font-size:16px;font-weight:700;margin-bottom:22px;box-shadow:0 3px 8px rgba(27,79,124,.08)}.list-back:hover{background:#dceefa;color:#0d5b9a}.skill-search{width:min(390px,100%);margin:0 0 22px auto;display:flex;align-items:center;gap:9px;padding:9px 13px;border:1px solid #b9d6ed;border-radius:12px;background:rgba(255,255,255,.92);box-shadow:0 4px 12px rgba(27,79,124,.06)}.skill-search span{color:#7090ab;font-size:24px;line-height:1}.skill-search input{min-width:0;flex:1;border:0;outline:0;background:transparent;color:#173b5f;font:inherit;font-size:14px}.skill-search input::placeholder{color:#9aaebe}.skill-list{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}.skill-list-head,.skill-list-row{display:grid;grid-template-columns:1.1fr 1.6fr .8fr 1fr;gap:0;align-items:center}.skill-list-head{padding:12px 16px;background:#e9f3fb;color:#3472a7;font-size:12px;font-weight:700}.skill-list-row{min-height:58px;border-top:1px solid var(--line);padding:0 16px;font-size:13px}.skill-list-row span{color:var(--muted);font-size:12px}.skill-list-row a{color:#176daf;text-decoration:underline;text-underline-offset:3px}.internal-link.available{color:#16375a;text-decoration:underline;text-underline-offset:3px}.internal-link.unavailable{color:#16375a;cursor:default;text-decoration:none}.internal-download.available,.internal-download.unavailable{color:#16375a}.list-tag{display:inline-block;width:max-content;padding:3px 7px;border-radius:10px;background:#edf5ff;color:var(--blue);font-size:11px}.list-tag.external{background:#f4efff;color:#7550ad}.list-section{margin-top:28px}.list-section h2{font-size:20px;margin:0 0 10px}@media(max-width:700px){.list-page{width:calc(100% - 24px);padding-top:28px}.skill-search{margin-left:0}.skill-list{overflow-x:auto}.skill-list-head,.skill-list-row{min-width:700px}}
+      .skill-search{min-height:44px;padding:9px 14px;gap:10px}.skill-search span{position:relative;display:block;flex:0 0 16px;width:16px;height:16px;border:1.8px solid #7090ab;border-radius:50%;font-size:0}.skill-search span::after{content:"";position:absolute;width:7px;height:1.8px;right:-5px;bottom:-2px;border-radius:2px;background:#7090ab;transform:rotate(45deg);transform-origin:left center}.skill-search input{font-size:15px;line-height:1.35;padding:1px 0}.skill-list-row.search-match{background:#fffaf0}.skill-list-row[hidden]{display:none!important}.recommend-empty{padding:28px;text-align:center;color:var(--muted);border:1px solid var(--line);border-radius:14px;background:#fff}.pager{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:14px}.pager button{border:1px solid #b9d6ed;border-radius:9px;padding:7px 12px;background:#fff;color:#176daf;cursor:pointer}.pager button:disabled{cursor:not-allowed;opacity:.45}.pager span{color:var(--muted);font-size:12px}
+    </style>
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="./index.html?board=external" aria-label="返回互联网 Skills 首页"><div class="brand-logo-shell"><img class="brand-logo" src="./assets/patchx-logo-transparent.png" alt="PatchX" /></div></a><div class="header-meta"><b>更新日期：2026年09月12日</b><span>纠错：联系荣昭</span></div></header>
+    <main class="list-page">
+      <a class="list-back" href="./index.html">← 返回推荐天梯榜</a>
+      <h1>AI Skills · 技能清单</h1>
+      <p>天梯中出现的项目都会在这里登记；点击互联网项目可直接查看 GitHub。</p>
+      <div class="skill-search"><span aria-hidden="true">⌕</span><input id="skill-search" type="search" placeholder="检索用途" aria-label="检索用途" /></div>
+      <section class="list-section"><h2>内部 Skills</h2><div class="skill-list"><div class="skill-list-head"><span>技能</span><span>用途</span><span>推荐排名</span><span>入口（需登内部云盘NAS，无账号请联系运维）</span></div><div class="skill-list-row"><b>会议纪要助手</b><span>整理会议内容、行动项和责任人</span><em class="list-tag">1</em><a class="internal-link available" href="https://192-168-100-15.patchx-fileserver.direct.quickconnect.to:5001/#/signin" target="_blank" rel="noopener">Nas云盘下载</a></div><div class="skill-list-row"><b>DOCX 转 PPT</b><span>把 Word 内容整理成演示文稿</span><em class="list-tag">2</em><span class="internal-link unavailable">Nas云盘下载</span></div><div class="skill-list-row"><b>工作汇报助手</b><span>生成周报、月报和管理层摘要</span><em class="list-tag">3</em><a class="internal-link available" href="https://192-168-100-15.patchx-fileserver.direct.quickconnect.to:5001/#/signin" target="_blank" rel="noopener">Nas云盘下载</a></div><div class="skill-list-row"><b>文字润色助手</b><span>优化工作文字和表达</span><em class="list-tag">4</em><a class="internal-link available" href="https://192-168-100-15.patchx-fileserver.direct.quickconnect.to:5001/#/signin" target="_blank" rel="noopener">Nas云盘下载</a></div></div></section>
+      <section class="list-section"><h2>互联网 Skills</h2><div class="skill-list"><div class="skill-list-head"><span>技能</span><span>用途</span><span>推荐排名</span><span>入口</span></div><div class="skill-list-row"><b>Codex</b><span>代码开发、测试、修复和审查</span><em class="list-tag external">1</em><a href="https://github.com/openai/codex" target="_blank" rel="noopener">GitHub</a></div><div class="skill-list-row"><b>Anthropic Skills</b><span>文档、PDF、PPT 和表格技能</span><em class="list-tag external">2</em><a href="https://github.com/anthropics/skills" target="_blank" rel="noopener">GitHub</a></div><div class="skill-list-row"><b>Gemini CLI</b><span>终端 Agent 和研发辅助</span><em class="list-tag external">3</em><a href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener">GitHub</a></div><div class="skill-list-row"><b>LarkSuite CLI</b><span>飞书办公和会议相关能力</span><em class="list-tag external">4</em><a href="https://github.com/larksuite/cli" target="_blank" rel="noopener">GitHub</a></div><div class="skill-list-row"><b>Microsoft Skills</b><span>开发辅助和 Agent Skills 参考</span><em class="list-tag external">5</em><a href="https://github.com/microsoft/skills" target="_blank" rel="noopener">GitHub</a></div><div class="skill-list-row"><b>Qoder</b><span>编程、文档、表格和综合办公</span><em class="list-tag external">6</em><a href="#qoder">官方入口待补</a></div></div></section>
+      <section id="recommend-section" class="list-section"><h2>推荐目录</h2><div id="recommend-list" class="skill-list"></div><div id="recommend-empty" class="recommend-empty" hidden>暂无匹配内容</div><div class="pager"><button id="prev-page" type="button">上一页</button><span id="page-info">第 1 页</span><button id="next-page" type="button">下一页</button></div></section>
+    </main>
+    <script>
+      const searchInput = document.querySelector('#skill-search');
+      const baseSections = [...document.querySelectorAll('.list-section:not(#recommend-section)')];
+      const baseRows = baseSections.flatMap((section) => [...section.querySelectorAll('.skill-list-row')]);
+      const recommendSection = document.querySelector('#recommend-section');
+      const recommendList = document.querySelector('#recommend-list');
+      const recommendEmpty = document.querySelector('#recommend-empty');
+      const prevPage = document.querySelector('#prev-page');
+      const nextPage = document.querySelector('#next-page');
+      const pageInfo = document.querySelector('#page-info');
+      const pageSize = 20;
+      let currentPage = 1;
+      let currentRecommendations = [];
+      const recommendations = [
+        ['会议纪要助手', '整理会议内容、行动项和责任人', '内部', '1', 'https://192-168-100-15.patchx-fileserver.direct.quickconnect.to:5001/#/signin'],
+        ['DOCX 转 PPT', '把 Word 内容整理成演示文稿', '内部', '2', 'https://192-168-100-15.patchx-fileserver.direct.quickconnect.to:5001/#/signin'],
+        ['工作汇报助手', '生成周报、月报和管理层摘要', '内部', '3', 'https://192-168-100-15.patchx-fileserver.direct.quickconnect.to:5001/#/signin'],
+        ['文字润色助手', '优化工作文字和表达', '内部', '4', 'https://192-168-100-15.patchx-fileserver.direct.quickconnect.to:5001/#/signin'],
+        ['Codex', '代码开发、测试、修复和审查', '互联网', '1', 'https://github.com/openai/codex'],
+        ['Anthropic Skills', '文档、PDF、PPT 和表格技能', '互联网', '2', 'https://github.com/anthropics/skills'],
+        ['Gemini CLI', '终端 Agent 和研发辅助', '互联网', '3', 'https://github.com/google-gemini/gemini-cli'],
+        ['LarkSuite CLI', '飞书办公和会议相关能力', '互联网', '4', 'https://github.com/larksuite/cli'],
+        ['Microsoft Skills', '开发辅助和 Agent Skills 参考', '互联网', '5', 'https://github.com/microsoft/skills'],
+        ['docx · Anthropic Skills', 'Word 文档创建、读取和格式化，官方候选', '互联网', '13', 'https://github.com/anthropics/skills/tree/main/skills/docx'],
+        ['pptx · Anthropic Skills', 'PPT 创建、编辑和质量检查，官方候选', '互联网', '14', 'https://github.com/anthropics/skills/tree/main/skills/pptx'],
+        ['frontend-design', '前端页面设计与实现指导，官方候选', '互联网', '15', 'https://github.com/anthropics/skills/tree/main/skills/frontend-design'],
+        ['Qoder', '编程、文档、表格和综合办公', '互联网', '6', 'https://docs.qoder.com/'],
+        ['文档文件', '互联网文档、PDF、PPT 和表格处理方向', '互联网', '7', 'https://github.com/anthropics/skills'],
+        ['快速工具', '适合终端、代码和日常研发辅助', '互联网', '8', 'https://github.com/google-gemini/gemini-cli'],
+        ['AGI 指令', '可复用的 Agent 指令和模板方向', '互联网', '9', 'https://github.com/microsoft/skills'],
+        ['OpenClaw 官方主页', '项目介绍、正版入口和最新动态', '内部推荐', '10', 'https://openclaw.ai/'],
+        ['OpenClaw 官方安装', 'Windows、macOS、Linux 安装与初始化', '内部推荐', '11', 'https://docs.openclaw.ai/'],
+        ['OpenClaw 官方文档', 'Onboarding、Gateway、Skills 和安全设置', '内部推荐', '12', 'https://docs.openclaw.ai/'],
+      ];
+      function renderRecommendations() {
+        const totalPages = Math.max(1, Math.ceil(currentRecommendations.length / pageSize));
+        currentPage = Math.min(currentPage, totalPages);
+        const start = (currentPage - 1) * pageSize;
+        const visible = currentRecommendations.slice(start, start + pageSize);
+        const query = searchInput.value.trim();
+        recommendList.innerHTML = `<div class="skill-list-head"><span>技能/项目</span><span>用途</span><span>来源</span><span>入口</span></div>` + visible.map(([name, desc, source, rank, href]) => `<div class="skill-list-row${query ? ' search-match' : ''}"><b>${rank}. ${name}</b><span>${desc}</span><em class="list-tag">${source}</em><a href="${href}" target="_blank" rel="noopener">打开</a></div>`).join('');
+        recommendEmpty.hidden = currentRecommendations.length > 0;
+        pageInfo.textContent = `第 ${currentPage} / ${totalPages} 页`;
+        prevPage.disabled = currentPage <= 1 || currentRecommendations.length === 0;
+        nextPage.disabled = currentPage >= totalPages || currentRecommendations.length === 0;
+      }
+      function applySearch() {
+        const query = searchInput.value.trim().toLocaleLowerCase();
+        baseRows.forEach((row) => { const matched = !query || row.textContent.toLocaleLowerCase().includes(query); row.hidden = !matched; row.classList.toggle('search-match', Boolean(query) && matched); });
+        baseSections.forEach((section) => { section.hidden = Boolean(query) && !section.querySelector('.skill-list-row:not([hidden])'); });
+        currentRecommendations = query ? recommendations.filter((item) => item.join(' ').toLocaleLowerCase().includes(query)) : [...recommendations];
+        currentPage = 1; renderRecommendations();
+        if (query) { const first = [...baseRows, ...recommendList.querySelectorAll('.skill-list-row')].find((row) => !row.hidden); if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      }
+      searchInput.addEventListener('keydown', (event) => { if (event.key === 'Enter') applySearch(); });
+      searchInput.addEventListener('input', () => { if (!searchInput.value.trim()) applySearch(); });
+      prevPage.addEventListener('click', () => { if (currentPage > 1) { currentPage -= 1; renderRecommendations(); } });
+      nextPage.addEventListener('click', () => { const totalPages = Math.ceil(currentRecommendations.length / pageSize); if (currentPage < totalPages) { currentPage += 1; renderRecommendations(); } });
+      currentRecommendations = [...recommendations]; renderRecommendations();
+    </script>
+  </body>
+</html>
